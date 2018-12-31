@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Axios Test</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="container">
+      <h1 class="h1">Axios Demo <small>by CodeTheSmartWay.com</small></h1>
+      <div class="jumbotron">
+        <h1>Welcome to Axios</h1>
+        <h4>
+          This application use Axios. Axios is a promise-based HTTP client for
+          JavaScript.
+        </h4>
+      </div>
+      <!-- REQUEST SECTION -->
+      <!-- REQUEST 1 -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">GET REQUEST</div>
+        <div class="panel-body">
+          <button class="btn btn-primary" id="getRequest1">Get Todos</button>
+          <button class="btn btn-warning clearResult">Clear</button>
+          <div class="panel-body" id="getResult1"></div>
+        </div>
+      </div>
+
+      <!-- REQUEST with Paramter -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">GET REQUEST with Parameter</div>
+        <div class="panel-body">
+          <input
+            type="text"
+            class="form-control"
+            id="todoId"
+            placeholder="Todo ID"
+          />
+          <br />
+          <button class="btn btn-primary" id="getRequest2">Get Todos</button>
+          <button class="btn btn-warning clearResult">Clear</button>
+          <div class="panel-body" id="getResult2"></div>
+        </div>
+      </div>
+
+      <!-- Post REQUEST -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">POST REQUEST</div>
+        <div class="panel-body">
+          <input
+            type="text"
+            class="form-control"
+            id="todoTitle"
+            placeholder="Todo Title"
+          />
+          <br />
+          <button class="btn btn-primary" id="postRequest">Send</button>
+          <button class="btn btn-warning clearResult">Clear</button>
+          <div class="panel-body" id="postResult"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <!-- <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- AXIOS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

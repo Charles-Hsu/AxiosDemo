@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Axios Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+    />
+    <!-- Optional theme -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Axios Demo <small>by CodingTheSmartWay.com</small></h1>
+      <div class="jumbotron">
+        <h1>Welcome to Axios</h1>
+        <h4>
+          This application use Axios. Axios is a promise-based HTTP client for
+          JavaScript.
+        </h4>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">GET Request</div>
+        <div class="panel-body">
+          <!-- <button class="btn btn-primary" onclick="performGetRequest1()"> -->
+          <button class="btn btn-primary" id="performGetRequest1">
+            Get Todos
+          </button>
+          <button class="btn btn-warning clearOutput">
+            <!-- onclick="clearOutput()"> -->
+            Clear
+          </button>
+          <div class="panel-body" id="getResult1"></div>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">GET Request With Parameters</div>
+        <div class="panel-body">
+          <input
+            type="text"
+            class="form-control"
+            id="todoId"
+            placeholder="Todo ID ..."
+          /><br />
+          <!-- <button class="btn btn-primary" onclick="performGetRequest2()"> -->
+          <button class="btn btn-primary" id="performGetRequest2">
+            Get Todos
+          </button>
+          <button class="btn btn-warning clearOutput">Clear</button>
+          <div class="panel-body" id="getResult2"></div>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">POST Request</div>
+        <div class="panel-body">
+          <!-- <form id="todoInputForm"> -->
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="todoTitle"
+              placeholder="Todo Title..."
+            />
+          </div>
+          <button class="btn btn-primary" id="postRequest">Send</button>
+          <!-- </form> -->
+          <!-- <br /> -->
+          <button class="btn btn-warning clearOutput">Clear</button>
+          <div class="panel-body" id="postResult"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // axios
+      //   .get('https://jsonplaceholder.typicodexx.com/todos/1')
+      //   .then(function(response) {
+      //     console.log(response.data);
+      //   })
+      //   .catch(function(error) {
+      //     console.log(error);
+      //   });
+    </script>
+    <script src="js/script2.js"></script>
+  </body>
+</html>
