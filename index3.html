@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
+    <title>Axios Test</title>
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -16,21 +17,22 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
     />
-    <title>Axios Demo Page</title>
   </head>
   <body>
+    <!-- HEADER -->
     <div class="container">
-      <h1 class="hi">Axios Demo Page by <small> TheSmartCoding.com </small></h1>
+      <h1 class="h1">Axios Demo <small>by CodeTheSmartWay.com</small></h1>
       <div class="jumbotron">
         <h1>Welcome to Axios</h1>
         <h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum aperiam
-          qui neque, architecto corporis.
+          This application use Axios. Axios is a promise-based HTTP client for
+          JavaScript.
         </h4>
       </div>
-      <!-- GET Request -->
+      <!-- REQUEST SECTION -->
+      <!-- REQUEST 1 -->
       <div class="panel panel-primary">
-        <div class="panel-heading">GET Request</div>
+        <div class="panel-heading">GET REQUEST</div>
         <div class="panel-body">
           <button class="btn btn-primary" id="getRequest1">Get Todos</button>
           <button class="btn btn-warning clearResult">Clear</button>
@@ -38,51 +40,64 @@
         </div>
       </div>
 
-      <!-- GET Request with Parameter -->
+      <!-- REQUEST with Paramter -->
       <div class="panel panel-primary">
-        <div class="panel-heading">GET Request with Parameter</div>
+        <div class="panel-heading">GET REQUEST with Parameter</div>
         <div class="panel-body">
-          <div class="form-group">
-            <input
-              type="text"
-              id="todoId"
-              class="form-control"
-              placeholder="Todo ID ..."
-            />
-          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="todoId"
+            placeholder="Todo ID"
+          />
+          <br />
           <button class="btn btn-primary" id="getRequest2">Get Todos</button>
           <button class="btn btn-warning clearResult">Clear</button>
           <div class="panel-body" id="getResult2"></div>
         </div>
       </div>
 
-      <!-- POST Request -->
+      <!-- Post REQUEST -->
       <div class="panel panel-primary">
-        <div class="panel-heading">POST Request</div>
+        <div class="panel-heading">POST REQUEST</div>
         <div class="panel-body">
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              id="todoTitle"
-              placeholder="Todo Title ..."
-            />
-          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="todoTitle"
+            placeholder="Todo Title"
+          />
+          <br />
           <button class="btn btn-primary" id="postRequest">Send</button>
           <button class="btn btn-warning clearResult">Clear</button>
           <div class="panel-body" id="postResult"></div>
         </div>
       </div>
     </div>
+
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <!-- Axios -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <!-- My Script -->
-    <script src="./js/script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <!-- <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- AXIOS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="./js/script3.js"></script>
   </body>
 </html>
